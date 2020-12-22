@@ -1,0 +1,4 @@
+#!/bin/usr/yosys
+read_verilog synth.v
+proc; opt;
+show

@@ -1,0 +1,6 @@
+read_verilog mac.v
+synth -top mac
+dfflibmap -liberty my_cells.lib
+abc -liberty my_cells.lib
+clean
+write_verilog synth.v

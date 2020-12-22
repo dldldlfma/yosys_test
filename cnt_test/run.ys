@@ -1,0 +1,8 @@
+read_verilog cnt.v
+show
+synth -top cnt
+proc; opt;
+dfflibmap -liberty my_cells.lib
+abc -liberty my_cells.lib
+clean
+write_verilog synth.v

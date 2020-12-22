@@ -1,0 +1,4 @@
+#!/bin/usr/yosys
+read_verilog mac.v
+proc; opt;
+show
